@@ -1,0 +1,84 @@
+/* Sections */
+
+section {
+  width: 90%;
+  margin: auto;
+  position: relative
+}
+
+@media (min-width:  640px) {
+  section {
+    width: 70%;
+  }
+}
+
+.tutorial {
+  width: 66%;
+  margin: auto;
+  text-align: center;
+}
+
+
+/* Slides */
+
+.slide {
+  padding: 2rem;
+  border: solid navy .2rem;
+  border-radius: .5rem;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+
+/* Scrollbar */
+:host ::ng-deep .swiper-scrollbar{
+  position: absolute;
+  bottom: -2rem;
+}
+
+:host ::ng-deep .swiper-scrollbar.swiper-scrollbar-horizontal {
+  height: .65rem;
+}
+
+:host ::ng-deep .swiper-scrollbar.swiper-scrollbar-horizontal .swiper-scrollbar-drag{
+  background: navy;
+  height: .5rem;
+  padding: .1rem;
+}
+
+
+/* Previous and Next buttons */
+
+.swiper-button-prev, .swiper-button-next {
+  background-color: navy;
+  color: white;
+  padding: .5rem;
+  border-radius: .5rem;
+}
+
+.swiper-button-prev {
+  left: 2rem;
+  right: auto;
+}
+
+.swiper-button-next {
+  right: 2rem;
+  left: auto;
+}
+
+@media (min-width:  640px) {
+  .swiper-button-prev, .swiper-button-next {
+    padding: 1rem;
+  }
+  
+  .swiper-button-prev {
+    left: 10rem;
+  }
+  
+  .swiper-button-next {
+    right: 10rem;
+  }
+}

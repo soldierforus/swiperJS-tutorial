@@ -1,0 +1,16 @@
+<div class="tutorial">
+  <h1>SwiperJS Tutorial for Angular</h1>
+</div>
+
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+<section>
+  <swiper-container #swiperRef swiperElement [config]="config" init="false">
+    <swiper-slide *ngFor="let slide of slides" class="slide">
+      <img width="300" height="200" src="https://picsum.photos/500/200" alt="randomized image">
+      <h2>{{slide.title}}</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ratione eligendi amet facere odio iste dolores perferendis corporis aperiam, tempore, id recusandae labore deleniti harum expedita illum nobis! Quo cupiditate beatae numquam velit nostrum, optio voluptates quaerat nihil incidunt.</p>
+    </swiper-slide>
+  </swiper-container>
+  <div class="swiper-scrollbar"></div>
+</section>
